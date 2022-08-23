@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 
 <body>
-
+  <h1>Variables</h1>
+  
+  <script>
+    function checkVal(rightValue) {
+      let tokenAmount = document.getElementById("stringInput").value;
+      if(tokenAmount == rightValue) {
+        alert("You got it!");
+        return true;
+      }
+      alert("Close, but not quite!");
+      return false;
+    }
+  </script>
+  
+  In NikoScript, variable assignments follow one of these two forms:
+  <code>
+    dataType varName;
+    varname = value;
+    
+    dataType varName = value;
+  </code>
+    
   <style>
     table, th, td {
       border: 1px solid;
@@ -13,9 +34,6 @@
     }
   </style>
   
-  <input type="string" name="stringInput" id="stringInput" max="20" min="1" step="1">
-  <button type="button" onclick="checkVal(rightValue)">Check!</button>
-
   <p>In NikoScript, variables are <b>hard-typed</b>, which means you need to specify the type of values you want.</p>
   <br>
   <p>Here are some examples of values, along with some examples of what they are exactly.</p>
@@ -53,17 +71,26 @@
     </tr>
   </table>
   
-
+  <h2>Exercises</h2>
+  
+  <ol>
+    <li>Create an int named i that is equal to three</li>
+    <li>Create a char that is the dollar-sign character.</li>
+  </ol>
+  
+  <h2>Answer here.</h2>
+  
+  <p>Exercise one.</p>
   <script>
-    function checkVal(rightValue) {
-      let tokenAmount = document.getElementById("stringInput").value;
-      if(tokenAmount == rightValue) {
-        alert("You got it!");
-        return true;
-      }
-      alert("Close, but not quite!");
-      return false;
-    }
+    let rightValue = "int i = 3;";
   </script>
+  <input type="string" name="stringInput" id="stringInput" max="20" min="1" step="1">
+  <button type="button" onclick="checkVal(rightValue)">Check!</button>
+
+  <p>Exercise two.</p>
+  <script>
+    let rightValue = "char c = '$';";
+  </script>
+
 
 </body>
