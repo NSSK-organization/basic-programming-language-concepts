@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 
-<input type="number" name="numberInput" id="numberInput" max="20" min="1" step="1">
-<button type="button" onclick="myFunction()">sumbit</button>
+<input type="string" name="stringInput" id="stringInput" max="20" min="1" step="1">
+<button type="button" onclick="checkInt()">Check!</button>
 
 <script>
-  function myFunction() {
-    let tokenAmount = document.getElementById("numberInput").value;
-    return // whatever you want to do with it
+  function checkInt() {
+    let tokenAmount = document.getElementById("stringInput").value;
+    if(tokenAmount == "int a = 3;")
+      return true;
+    return false;
   }
 </script>
