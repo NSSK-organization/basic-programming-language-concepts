@@ -6,8 +6,11 @@
 <script>
   function checkInt() {
     let tokenAmount = document.getElementById("stringInput").value;
-    if(tokenAmount == "int a = 3;")
+    if(tokenAmount == "int a = 3;") {
+      alert("You got it!");
       return true;
+    }
+    alert("Close, but not quite!");
     return false;
   }
 </script>
