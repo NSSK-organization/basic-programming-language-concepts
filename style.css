@@ -1,0 +1,17 @@
+table, th, td {
+    border: 1px solid;
+}
+
+table {
+    width: 70%;
+}
+  
+* {
+    font-family: helvetica;
+    font-size: 14px;
+}
+
+code {
+    font-family: monospaced;
+    font-size: 14px;
+}
