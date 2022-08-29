@@ -1,17 +1,70 @@
 table, th, td {
     border: 1px solid;
-}
-
-table {
-    width: 70%;
+	text-align: center;
+	vertical-align: middle;
+	border: 2px solid #80140e;
+	border-radius: 8px;
 }
   
 * {
     font-family: helvetica;
-    font-size: 14px;
+	text-align: center;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 18px;
 }
 
 code {
-    font-family: monospaced;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     font-size: 14px;
+}
+
+button, input {
+	border-radius: 8px;
+	border: 2px solid green;
+	transition-duration: 0.4s;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+button:hover {
+	background-color: green;
+	color: white;
+}
+
+pre {
+	font-family: inherit;
+	margin: inherit;
+	font-size: inherit;
+}
+
+b, i { /* because we had the problem of bold and italic text taking up a newline */
+	display:inline;
+	margin: 1px;
+}
+
+input {
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+.table {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.code {
+	font-family: "courier-new", serif;
+	font-size: 14px;
+	margin: inherit;
+}
+
+* {
+	font-size: 16px;
 }
