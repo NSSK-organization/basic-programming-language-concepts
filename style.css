@@ -45,6 +45,11 @@ pre {
 	font-size: inherit;
 }
 
+a {
+	font: inherit;
+	margin: inherit;
+}
+
 b, i { /* because we had the problem of bold and italic text taking up a newline */
 	display:inline;
 	margin: 1px;
