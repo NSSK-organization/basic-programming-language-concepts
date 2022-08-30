@@ -59,6 +59,11 @@ input {
 	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 
+*::selection {
+  background: #ff0000;
+  color: #fff;
+}
+
 .table {
 	text-align: center;
 	vertical-align: middle;
