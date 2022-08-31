@@ -8,6 +8,11 @@
 
 	<body>
 
+		<script>
+			var basics_ans1 = "a = b + 3;";
+			var basics_ans2 = "add(3, 2);" + "\r\n" + "return true;"; 
+		</script>
+
 		<h1>The Basics of NikoScript</h1>
 
 		<p>
@@ -27,6 +32,20 @@
 		<p>
 		The majority of this course is build based off of debugging skills; I will give you faulty code, and you will debug it. Occasionally, you may write some code of your own, as it is always good practice to do so.
 		</p>
+
+		<h2>Exercises</h2>
+
+		<p>1. Debug the following statement.</p>
+		 <input type="string" name="stringInput" id="stringInput" max="300" min="1" value="a = b + 3" step="1">
+		<script>var basics_ans1 = "a = b + 3;"</script>
+		<button type="button" onclick="checkVal(basics_ans1); reassign(value, ex2);">Check!</button>
+
+		<p>2. Debug the following statement.</p>
+		<textarea type="string" name="stringInput" id="stringInput" max="300" min="1">add(3, 2)
+6
+return true;</textarea>
+		<button type="button" onclick="checkVal(basics_ans2)">Check!</button>
+
 
 	</body>
 

@@ -11,6 +11,11 @@
 
 <body>
 
+<script>
+	var ex1 = "int i = 3;";
+	var ex2 = "char c = '$';";
+</script>
+	
   <h1>Variables</h1>
   
   <p>
@@ -69,24 +74,22 @@
   
   <ol>
     <li>Create an int named i that is equal to three.</li>
-    <li>Create a char that is the dollar-sign character.</li>
+    <li>Create a char named c that is the dollar-sign ($) character.</li>
   </ol>
   
   <h2>Answer here.</h2>
   
   <p>Exercise one.</p>
   <script>
-    let value = "int i = 3;";
+    var var_ans1 = "int i = 3;";
+	var var_ans2 = "char c = '$';";
   </script>
   <input type="string" name="stringInput" id="stringInput" max="20" min="1" step="1">
-  <button type="button" onclick="checkVal(value)">Check!</button>
+  <button type="button" onclick="checkVal(var_ans1)">Check!</button>
 
   <p>Exercise two.</p>
-  <script>
-    let value = "char c = '$';";
-  </script>
-  <input type="string" name="stringInput" id="stringInput" max="20" min="1" step="1">
-  <button type="button" onclick="checkVal(value)">Check!</button>
+  <input type="string" name="stringInput" id="stringInput" max="200" min="1" step="1">
+  <button type="button" onclick="checkVal(var_ans2)">Check!</button>
 
 </body>
 
