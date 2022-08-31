@@ -1,4 +1,5 @@
 var value; /* for checkVal. */
+var tokenAmount; /* value user has entered into text boxes */
 
 function checkVal(rightValue) { 
 	/* general function for single-line answers */
@@ -7,6 +8,13 @@ function checkVal(rightValue) {
 		alert("You got it!");
 		return true;
 	}
-	alert("Not quite!");
-	return false;
+	else if(tokenAmount != rightValue) {
+		alert("Not quite!");
+		return false;
+	}
+}
+
+function reassign(value, string) {
+	value = string;
+	return;
 }
